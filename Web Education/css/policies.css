@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.policies{
+	padding:50px 0 30px 0;
+}
+.privacy,
+.refunds{
+	width:41.5%;
+	float:left;
+	margin:40px 25px 35px 25px;
+	text-align:center;
+	background-color:#118683;
+	color:#fff;
+	font-family: 'inseebold';
+	padding:20px;
+	height:336px;
+}
+.privacy h1,
+.refunds h1{
+	font-size:50px;
+	margin:0;
+	border-bottom: 1px solid #fff;
+	display:inline-block;
+	padding:0 40px 10px 40px;
+}
+.privacy p,
+.refunds p{
+	font-size:22px;
+	margin:0;
+	padding:25px 10px 20px 10px;
+	line-height:1.8;
+	font-weight:normal;
+}
