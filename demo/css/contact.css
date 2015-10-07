@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.contact{
+	clear:both;
+	padding:20px 0;
+}
+.contact h1{
+	color:#0e2e40;
+	text-align:center;
+	font-family: 'inseebold';
+	font-size:36px;
+}
+.form-contact{
+	background-color:#118683;
+	padding:30px 100px;
+	float:left;
+	margin-bottom:30px;
+}
+.box-contact{
+	width:44%;
+	float:left;
+}
+.box-textarea{
+	width:54%;
+	float:left;
+	margin-left:15px;
+}
+.form-contact input,
+.form-contact textarea{
+	border:1px solid #fff;
+	background-color:transparent;
+	color:#fff;
+	font-family: 'SemiLight';
+	font-size:24px;
+	padding:8px 15px;
+	width:91%;
+	margin-bottom:20px;
+}
+::-webkit-input-placeholder {
+	color:#fff;
+}
+.box-contact button{
+	background-color:#113445;
+	color:#fff;
+	text-transform:uppercase;
+	padding:8px 20px;
+	font-family: 'inseebold';
+	font-size:20px;
+	border:none;
+	border-radius:5px;
+}
+.form-contact textarea{
+	height:155px;
+}

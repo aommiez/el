@@ -25,11 +25,12 @@ class TestCTL extends BaseCTL {
      * @GET
      */
     public function index () {
-        $xcrud = Xcrud::get_instance();
-        $xcrud->table('customers');
+        //$xcrud = Xcrud::get_instance();
+        //$xcrud->table('customers');
         //return $xcrud->render();
-        $v = new HtmlView("/test",array("content"=>$xcrud->render()));
-        return $v;
+        //$v = new HtmlView("/test",array("content"=>$xcrud->render()));
+        $arr = array('view'=> 'test');
+        return $arr;
     }
 
     /**

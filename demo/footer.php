@@ -1,7 +1,6 @@
-
 <footer>
     	<div class="container">
-        	<div class="box-footer">
+        	<div class="box-footer">            
                 <div class="member">
                 	<div class="joined">
                     	<p class="text-member">Joined members</p>
@@ -9,16 +8,16 @@
                     </div>
                     <div class="online">
                     	<p class="text-member">Online members</p>
-                        <p class="number">3000</p>
+                        <p class="number">3000</p>	
                     </div>
                 </div><!--member-->
                 <div class="link-facebook">
                 	<h1>Likes on Facebook</h1>
                     <div class="likes-facebook">
-                    	<a href="#"><img src="<?php echo \Main\Helper\URL::absolute("/public/images/facebook.jpg")?>" alt="facebook"></a>
-                        <a href="#"><img src="<?php echo \Main\Helper\URL::absolute("/public/images/logo-white.png")?>" alt=""></a>
+                    	<a href="#"><img src="images/facebook.jpg" alt="facebook"></a>
+                        <a href="#"><img src="images/logo-white.png" alt=""></a>
                     </div>
-                    <img src="<?php echo \Main\Helper\URL::absolute("/public/images/link-facebook.png")?>" alt="">
+                    <img src="images/link-facebook.png" alt="">
                 </div>
                 <div class="latest">
                 	<h1>Latest News</h1>
@@ -27,7 +26,7 @@
                         </div>
                         <div class="detail">
                         	<p>Access your past lessons at any time</p>
-                            <a href="#">read more <img src="<?php echo \Main\Helper\URL::absolute("/public/images/readmore.png")?>" alt="readmore"></a>
+                            <a href="#">read more <img src="images/readmore.png" alt="readmore"></a>
                         </div>
                     </div><!--box-news-->
                     <div class="box-news">
@@ -35,7 +34,7 @@
                         </div>
                         <div class="detail">
                         	<p>Five ways to score cheap textbooks</p>
-                            <a href="#">read more <img src="<?php echo \Main\Helper\URL::absolute("/public/images/readmore.png")?>" alt="readmore"></a>
+                            <a href="#">read more <img src="images/readmore.png" alt="readmore"></a>
                         </div>
                     </div><!--box-news-->
                     <div class="box-news">
@@ -43,7 +42,7 @@
                         </div>
                         <div class="detail">
                         	<p>Online geometry tutoring</p>
-                            <a href="#">read more <img src="<?php echo \Main\Helper\URL::absolute("/public/images/readmore.png")?>" alt="readmore"></a>
+                            <a href="#">read more <img src="images/readmore.png" alt="readmore"></a>
                         </div>
                     </div><!--box-news-->
                 </div><!--lates-->
@@ -53,12 +52,10 @@
             	<div class="container">
                     <div>
                     <p>&copy2015. All right reserved. tufftexmedia.com</p>
-
+                    
                 <div class="top">
-                    <a href="#top"><img src="<?php echo \Main\Helper\URL::absolute("/public/images/arrow.png")?>" alt="top"></a>
+                    <a href="#top"><img src="images/arrow.png" alt="top"></a>
                 </div></div>
             </div>
     	</div><!--copyright-->
     </footer><!--footer-->
-</body>
-</html>

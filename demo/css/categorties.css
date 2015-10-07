@@ -1,0 +1,71 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.category-search{
+	background:url(../images/aboutus/search-cat.png) no-repeat;
+	background-size:100%;
+	height:375px;
+	clear:both;
+}
+.category-search input{
+	margin:150px 50px;
+	width:82%;
+	background-color:transparent;
+	border:1px solid #fff;
+	padding:10px 40px;
+	font-family: 'inseebold';
+	font-size:35px;
+	color:#fff;
+}
+::-webkit-input-placeholder {
+	color:#fff;
+	background: url(../images/aboutus/search-icon-white.png) no-repeat right center;
+	background-position:100% 50%;
+}
+.content{
+	background-color:#118683;
+	padding-bottom:40px;
+	min-height:1000px;
+}
+.content .breadcrumb{
+	padding:30px 50px 20px 0px;
+	border-bottom:1px solid #fff;
+	margin:0 0 20px 10px;
+	display: inline-block;
+	width:auto;
+	float:none;
+}
+.content .breadcrumb ol{
+	color:#fff;
+	margin:0;
+	padding-left:0;
+}
+.content .breadcrumb ol li,
+.content .breadcrumb ol li a{
+	font-family: 'inseebold';
+	color:#fff;
+	display:inline;
+	font-size:26px;
+	text-decoration:none;
+	font-weight:normal;
+}
+.category{
+	margin-top:20px;
+}
+.icon a,
+.icon1 a,
+.icon2 a{
+	float:left;
+	margin:0 143px;
+}
+.icon1 a{
+	margin-left:0;
+}
+.icon2 a{
+	margin-right:0;
+}
+.icon a:hover,
+.icon1 a:hover,
+.icon2 a:hover{
+	opacity:0.9;
+}

@@ -1,0 +1,290 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.signin,
+.signup{
+	clear:both;
+	padding:20px 0 30px 0;
+	float:left;
+	width:100%;
+}
+.head{
+	font-family: 'inseebold';
+	color:#0f2f40;
+	text-align:center;
+}
+.head h1{
+	margin:0;
+	font-size:36px;
+}
+.head h3{
+	margin:0;
+	font-size:24px;
+}
+.form-signin{
+	padding:25px 0 15px 0;
+	clear: both;
+    float: left;
+	width:100%;
+}
+.form-signin input{
+	border:1px solid #fff;
+	color:#fff;
+	font-family: 'SemiLight';
+	font-size:22px;
+	padding:10px 15px;
+	width:400px;
+	margin:0 0 20px 0;
+	border-radius:2px;
+}
+.form-signin ::-webkit-input-placeholder {
+	color:#fff;
+	background-image:none !important;
+}
+.form-signin a{
+	color:#113445;
+	font-family: 'inseebold';
+	text-decoration:none;
+	display: inline-block;
+    position: relative;
+    top: -52px;
+    right: 15px;
+    z-index: 9999;
+    float:right;
+}
+.form-signin button[type="submit"],
+.notremember span button{
+	background-color:#113445;
+	color:#fff;
+	text-transform:uppercase;
+	padding:11px 45px;
+	font-family: 'inseebold';
+	font-size:20px;
+	border:none;
+	border-radius:5px;
+	float:left;
+}
+.box-password,
+.box-username{
+	float:left;
+	width:454px;
+	margin-right:10px;
+	height: 66px;
+}
+.form-signin input.username{
+	background:url(../images/ic-username.png) no-repeat 3% 45% #118683;
+	padding-left:40px;
+	background-size: 4%;
+}
+.form-signin input.password{
+	background:url(../images/ic-password.png) no-repeat 3% 45% #118683;
+	padding-left:40px;
+	background-size: 3.5%;
+    z-index: 1;
+	
+}
+.remember{
+	clear:both;
+	position:relative;
+	color:#113445;
+	font-family: 'inseebold';
+	font-size:20px;
+}
+.remember input{
+	width:auto;
+}
+.remember input[type=checkbox] {
+	background-color:#113445;
+}
+.notremember{
+	font-family: 'inseebold';
+	color:#113445;
+	float: left;
+}
+span.text-notmember{
+	font-size:36px;
+	margin-right:20px;
+}
+span.signup{
+	font-size:20px;
+	margin-right:20px;
+	width: auto;
+    float: none;
+}
+.notremember span a{
+	background-color:#118683;
+	color:#fff;
+	text-transform:uppercase;
+	padding:11px 45px;
+	font-family: 'inseebold';
+	font-size:20px;
+	border:none;
+	border-radius:5px;
+	text-decoration:none;
+}
+/* sign in */
+.form-register{
+	width:620px;
+	margin:30px auto 40px auto;
+	background-color:#118683;
+	color:#fff;
+	font-family: 'inseebold';
+	border-radius:10px;
+	padding:30px 20px;
+}
+.upload-images{
+	text-align:center;
+	border:1px dashed #fff;
+	padding:20px 0;
+	font-family: 'ProximaNova';
+	font-size:18px;
+	margin-bottom:20px;
+}
+.upload-images p{
+	margin:0;
+	line-height: 1.4;
+}
+.upload-images a{
+	color:#74b3ed;
+}
+.form-profile p,
+.form-profile .timezone span{
+	margin:20px 0 0 0;
+	font-size:20px;
+	text-transform:uppercase;
+}
+.form-profile input{
+	background-color:transparent;
+	border:none;
+	color:#fff;
+	width:80%;
+	font-size:18px;
+	font-weight:normal;
+	margin-bottom:5px;
+}
+.form-profile input:focus{
+	border:none;
+	outline:none;
+}
+.form-profile div{
+	border-bottom:1px solid #419e9c;
+}
+.timezone form{
+	display:inline-block;
+	margin:20px 10px;
+}
+.timezone form select{
+	border:1px solid #fff;
+	padding-right:20px;
+	color:#fff;
+	border-radius:0;
+	width: 400px;
+    height: 30px;
+    text-indent: 20px;
+	font-size:16px;
+	font-family: 'inseebold';
+	vertical-align: middle;
+	-webkit-appearance: none;
+   -moz-appearance: none;
+   	appearance: none;
+	background:url(../images/ic-select.png) right center no-repeat #136b68;
+	background-position:97%;
+	outline:none
+}
+.timezone-update input[type="radio"]{
+	width:auto;
+	margin:7.5px 20px;
+}
+.timezone-update input[type="radio"]:checked{
+	background-color:#000;
+	
+}
+.timezone-update{
+	font-family: 'SemiLight';
+	font-size:18px;
+	text-transform:uppercase;
+	padding-bottom:20px;
+}
+p.update{
+	margin:20px 0 0 0;
+	font-size:20px;
+	text-transform:uppercase;
+	font-family: 'inseebold';
+}
+.form-profile h1{
+	color:#0e2e40;
+	font-size:30px;
+}
+.pass span{
+	text-transform:uppercase;
+}
+div.gender{
+	border:none;
+	padding:25px 0 0px 0;
+	font-family: 'ProximaNova';
+	font-size:18px
+}
+.gender input[type="radio"]{
+	width:auto;
+}
+input[value="female"]{
+	margin-left:20px;
+}
+.agree input[type="checkbox"]{
+	width:auto;
+}
+div.birth{
+	border:none;
+}
+div.agree{
+	border:none;
+	text-transform:uppercase;
+	text-align:center;
+	margin:20px 0;
+	font-size:20px;
+	font-weight:normal;
+}
+button[type="submit"]{
+	background-color:#0e2e40;
+	color:#fff;
+	font-size:20px;
+	text-transform:uppercase;
+	font-family: 'inseebold';
+	border:none;
+	border-radius:5px;
+	padding:10px 20px;
+	margin:0 auto;
+	display: block;
+	outline:none;
+}
+button[type="reset"]{
+	background-color:transparent;
+	color:#0e2e40;
+	border:none;
+	font-size:20px;
+	text-transform:uppercase;
+	font-family: 'inseebold';
+	padding:10px 20px 0 20px;
+	margin:0 auto;
+	display: block;
+	outline:none;
+}
+select#form_dob_month,
+select#form_dob_day,
+select#form_dob_year{
+	margin-top:5px;
+	background-color:transparent;
+	border:none;
+	color:#fff;
+	font-family: 'ProximaNova';
+	font-size:18px;
+	background:url(../images/icon-select.png) bottom right no-repeat;
+	-webkit-appearance: none;
+   -moz-appearance: none;
+   	appearance: none;
+	padding-right: 20px;
+}
+.birth span{
+	border-bottom:1px solid #419e9c;
+	margin-right:20px;
+}

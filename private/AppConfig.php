@@ -9,22 +9,22 @@
 $configs = array(
     "application" => array(
         "name" => "OLO PHP Framework V2",
-        "title" => "OLO PHP Framework V2 Web API",
+        "title" => "Easy Education",
         "version" => "1.0",
-        "base_url" => "",
-        "site_url" => "",
+        "base_url" => "http://localhost/el",
+        "site_url" => "http://localhost/el",
         "share_url" => "",
         "directory" => dirname(__FILE__),
         "view" => "default"
     ),
     "route"=> array(
-        "base_path"=> ""
+        "base_path"=> "/el"
     ),
     "crud" => array(
         "dbhost" => "localhost",
-        "dbname" => "",
-        "dbuser" => "",
-        "dbpass" => "",
+        "dbname" => "el",
+        "dbuser" => "root",
+        "dbpass" => "111111",
         "theme" => "bootstrap" , // can be 'default', 'bootstrap', 'minimal' or your custom. Theme of xCRUD visual presentation. For using bootstrap you need to load it on your page.
         "language" => "en" , // sets default localization
         "dbencoding"  => "utf8", // Your database encoding, default is 'utf8'. Do not change, if not sure.
@@ -47,10 +47,10 @@ $configs = array(
         "medoo" => array(
             "master"=> array(
                 "database_type"=> "mysql",
-                "database_name" => "",
+                "database_name" => "el",
                 "server" => "localhost",
-                "username" => '',
-                'password' => '',
+                "username" => 'root',
+                'password' => '111111',
 
                 // optional
                 'port' => 3306,

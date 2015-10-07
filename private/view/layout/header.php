@@ -13,7 +13,7 @@ use Main\Helper;
             echo \Main\AppConfig::get("application.title");
         ?>
     </title>
-
+    <link href="<?php echo Helper\URL::absolute("/public/css/core.css")?>" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="<?php echo Helper\URL::absolute("/public/css/bootstrap.min.css")?>" rel="stylesheet">
 
@@ -29,3 +29,24 @@ use Main\Helper;
     <script src="<?php echo \Main\Helper\URL::absolute("/public/js/bootstrap.min.js")?>"></script>
 </head>
 <body>
+
+  	<header>
+      	<div class="header">
+              <div class="container">
+                  <a name="top"></a>
+                  <div class="logo">
+                      <a href="<?php echo \Main\Helper\URL::absolute("/")?>"><img src="<?php echo \Main\Helper\URL::absolute("/public/images/logo.png")?>" alt="logo"></a>
+                  </div><!--logo-->
+                  <menu>
+                      <ul class="menu">
+                          <li><a class="active" href="<?php echo \Main\Helper\URL::absolute("/")?>">Home</a></li>
+                          <li><a href="<?php echo \Main\Helper\URL::absolute("/itwork")?>">How it Works</a></li>
+                          <li><a href="<?php echo \Main\Helper\URL::absolute("/services")?>">Services</a></li>
+                          <li><a href="<?php echo \Main\Helper\URL::absolute("/categorties")?>">Categorty</a></li>
+                          <li><a href="<?php echo \Main\Helper\URL::absolute("/aboutus?pages=aboutus")?>">About Us</a></li>
+                          <li><a href="<?php echo \Main\Helper\URL::absolute("/signin")?>">Sign in</a></li>
+                      </ul>
+                  </menu><!--menu-->
+              </div><!--container-->
+  	</div>
+  </header><!--header-->
