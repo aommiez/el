@@ -1,17 +1,4 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>About Us</title>
 
-<link type="text/css" rel="stylesheet" href="<?php echo \Main\Helper\URL::absolute("/public/css/aboutus.css")?>">
-<link type="text/css" rel="stylesheet" href="<?php echo \Main\Helper\URL::absolute("/public/css/global.css")?>">
-<link type="text/css" rel="stylesheet" href="<?php echo \Main\Helper\URL::absolute("/public/css/font.css")?>">
-<link type="text/css" rel="stylesheet" href="<?php echo \Main\Helper\URL::absolute("/public/css/findhelp.css")?>">
-
-</head>
-
-<body>
 
 	<?php $this->import("/layout/header"); ?>
     <!--header-->
@@ -65,6 +52,3 @@
         
 	<?php $this->import("/layout/footer"); ?>
     <!--footer-->
-
-</body>
-</html>

@@ -1,17 +1,3 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Sign In</title>
-
-<link type="text/css" rel="stylesheet" href="<?php echo \Main\Helper\URL::absolute("/public/css/signin.css")?>">
-<link type="text/css" rel="stylesheet" href="<?php echo \Main\Helper\URL::absolute("/public/css/global.css")?>">
-<link type="text/css" rel="stylesheet" href="<?php echo \Main\Helper\URL::absolute("/public/css/font.css")?>">
-<link type="text/css" rel="stylesheet" href="<?php echo \Main\Helper\URL::absolute("/public/css/findhelp.css")?>">
-<?php echo \Main\Helper\URL::absolute("/public/")?>
-</head>
-
-<body>
 
 	<?php $this->import("/layout/header"); ?>
     <!--header-->
@@ -69,6 +55,3 @@
      <?php $this->import("/layout/footer"); ?>
     <!--footer-->
 
-
-</body>
-</html>

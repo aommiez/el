@@ -1,3 +1,5 @@
+@charset "utf-8";
+/* CSS Document */
 
 .slide{
 	background:url(../images/slide-index.jpg) no-repeat;
@@ -25,26 +27,26 @@ p.text-banner02{
 	border:1px solid #fff;
 	border-radius:5px;
 	color:#fff;
-	padding:15px 25px;
+	padding:10px 25px;
 	font-family: 'inseebold';
 	font-size:26px;
 	width: 435px;
 	margin-right:15px;
 	background:url(../images/bg-emailbox.png) repeat;
 }
-#subscribeBut {
+.box-subscribe button{
 	color:#fff;
 	font-family: 'inseebold';
 	font-size:26px;
 	background-color:#118683;
 	border:none;
-	padding:15px 25px;
+	padding:10px 25px;
 	text-transform:uppercase;
-	display: inline-block;
 }
-::-webkit-input-placeholder {
+.box-subscribe ::-webkit-input-placeholder {
 	color:#fff;
 	font-size:26px;
+	background:none;
 }
 .howto{
 	background-color:#118683;
@@ -61,12 +63,12 @@ p.text-banner02{
 	font-weight: normal;
     word-spacing: 5px;
 }
-.video{
+.video-home{
 	padding:30px 0 0 0;
 	text-align:center;
 }
-.video video,
-.video img{
+.video-home video,
+.video-home img{
 	margin:0 auto;
 	text-align:center;
 	display:block;
@@ -112,19 +114,9 @@ p.text-banner02{
 	text-align:left;
 }
 .expert{
-  padding: 0 0 30px 0;
-min-height: 700px;
-width: 1070px;
-vertical-align: top;
-}
-.expertHome {
-  width: 50%;
-      float: left;
-      background-color: #118683;
-}
-.expertHomep.graduate .container {
-    width: 535px;
-    margin: 0 auto 0 0;
+	width: 50%;
+    float: left;
+	background-color:#118683;
 }
 .expert h1{
 	text-align:right;
@@ -182,7 +174,7 @@ p.service-detail{
 	color:#349997;
 	font-family: 'inseebold';
 	font-size:20px;
-	padding: 0 25px;
+	.breadcrumb, .sub-menupadding: 20px 25px;
 }
 a img.service-img:hover,
 a.link-service:hover{
@@ -200,17 +192,13 @@ a.link-service:hover{
 	color:#fff;
 	font-family: 'inseebold';
 	font-style:italic;
-	margin:60px 0 0 0;
+	margin:90px 0 0 0;
 	text-shadow:black 1px 1px 1px;
 	text-align:center;
 	font-size:46px;
 	font-weight:lighter;
 }
-body,
-menu{
-	padding:0;
-	margin:0;
-}
+/*header*/
 .header{
 	width:100%;
 	clear:both;
@@ -229,7 +217,7 @@ menu{
 }
 ul.menu{
 	float:left;
-	margin-top: 25px;
+	margin-top: 10px;
 	padding-left:50px;
 }
 ul.menu li{
@@ -246,14 +234,14 @@ ul.menu li a.active,
 ul.menu li a:hover{
 	color:#218e8b;
 }
-/*header*/
+/*footer*/
 footer{
 	background:#148784;
 	clear:both;
 }
 .box-footer{
 	padding:20px 0 30px 0;
-	height:380px;
+	height: 430px;
 	background:url(../images/footer.png) no-repeat bottom;
 	background-position: 50% 107.5%;
 }
@@ -262,14 +250,13 @@ footer{
 	background-color:#0f2f40;
 	color:#fff;
 	padding:0;
-	padding-top:25px;
 	float: left;
     width: 100%;
 	clear:both;
 }
 .copyright p{
 	float:left;
-	margin:0;
+	margin:22px 0 0 0;
 	display: inline;
 	font-size:18px;
 	font-style:italic;
@@ -280,7 +267,6 @@ footer{
 	padding:25px 20px 20px 20px;
 	float: right;
     position: relative;
-    top: -24px;
 }
 .member{
 	border-right:3px solid #fff;
@@ -291,10 +277,10 @@ footer{
 }
 .joined{
 	border-bottom:3px solid #fff;
-	padding:30px 0;
+	padding: 20px 0;
 }
 .online{
-	padding:25px 0;
+	padding:15px 0 0 0;
 }
 p.text-member{
 	font-family: 'SemiLight';
@@ -407,10 +393,13 @@ p.number{
 	font-size:26px;
 	text-decoration:none;
 }
-.breadcrumb,
+.page-next .breadcrumb,
 .sub-menu{
 	width:50%;
 	float:left;
+	background-color:transparent;
+	padding:0;
+	margin:0;
 }
 .sub-menu ul{
 	list-style:none;
@@ -520,20 +509,20 @@ p.number{
 	background-color:#102f41;
 	padding:2px 20px;
 	text-transform:uppercase;
-	height:55px;
+	height:60px;
 	font-size:22px;
 	line-height: 2.5;
 	border-radius:5px 5px 0 0;
 }
 .box-itwork:first-child .subject{
 	line-height: 1.3;
-    padding: 2px 40px;
+    padding: 4px 40px;
 }
 .specs{
 	background-color:#148784;
 	padding:15px 10px;
 	font-size:16px;
-	height:165px;
+	height:195px;
 	line-height: 1.4;
 	font-weight:normal;
 	border-radius: 0 0 5px 5px;
@@ -604,6 +593,7 @@ p.number{
 	padding:15px 0;
 	clear:both;
 }
+
 .findhelp input{
 	width:395px;
 	height:35px;
@@ -615,24 +605,24 @@ p.number{
 	padding-left:25px;
 	background:url(../images/bg-findhelp.png) no-repeat;
 }
-::-webkit-input-placeholder {
+.findhelp ::-webkit-input-placeholder {
 	color:#fff;
 	font-size:20px;
 	background:url(../images/search-icon.png) no-repeat right center;
 	background-position:95% 50%;
 }
 
-.expert{
+.expert-tea{
 	padding:0 0 30px 0;
 	clear: both;
     float: left;
 	min-height: 1000px;
 }
 .category-expert{
-  padding: 35px 0 20px 0;
-display: inline-block;
-width: 260px;
-vertical-align: top;
+  	padding: 35px 0 20px 0;
+	display: inline-block;
+	width: 280px;
+	vertical-align: top;
 	text-align:center;
 	font-family: 'inseebold';
 }
@@ -647,7 +637,7 @@ vertical-align: top;
 }
 .sub-number{
 	float:left;
-	width:58px;
+	width:100px;
 	background-color:#0f2f40;
 	border:none;
 	font-size:22px;
@@ -658,7 +648,7 @@ vertical-align: top;
 }
 .sub-category{
 	float:left;
-	width:160px;
+	width: 180px;
 	border:1px solid #667a85;
 	font-size:22px;
 	padding:5px 10px;
@@ -675,17 +665,17 @@ vertical-align: top;
 }
 .profile{
   display: inline-block;
-width: 800px;
-padding-top: 38px;
+	width: 800px;
+	padding-top: 38px;
 }
 .box-profile{
 	background:url(../images/bg-expert.jpg) no-repeat;
 	background-size:100%;
-	width:156px;
+	width:180px;
 	float:left;
 	text-align:center;
 	color:#fff;
-	margin-left:94px;
+	margin: 0 0 15px 85px;
 	padding:20px 10px;
 }
 .box-profile img{
@@ -693,13 +683,14 @@ padding-top: 38px;
 	margin:0 auto;
 }
 .box-profile a img{
-	margin:15px auto;
+	margin: 20px auto 15px auto;
 }
 a.name{
 	font-family: 'inseebold';
 	font-size:26px;
 	line-height: 0.4;
-  color:#fff;
+  	color:#fff;
+	padding:0 20px;
 }
 a.branch{
 	font-family: 'SemiLight';
@@ -740,7 +731,8 @@ p.graduate{
 	font-size:35px;
 	color:#fff;
 }
-::-webkit-input-placeholder {
+
+.category-search ::-webkit-input-placeholder {
 	color:#fff;
 	background: url(../images/aboutus/search-icon-white.png) no-repeat right center;
 	background-position:100% 50%;
@@ -886,7 +878,7 @@ p.graduate{
 	width:91%;
 	margin-bottom:20px;
 }
-::-webkit-input-placeholder {
+.form-contact ::-webkit-input-placeholder {
 	color:#fff;
 }
 .box-contact button{
@@ -1177,7 +1169,7 @@ div.agree{
 	font-size:20px;
 	font-weight:normal;
 }
-button[type="submit"]{
+/*button[type="submit"]{
 	background-color:#0e2e40;
 	color:#fff;
 	font-size:20px;
@@ -1189,7 +1181,7 @@ button[type="submit"]{
 	margin:0 auto;
 	display: block;
 	outline:none;
-}
+}*/
 button[type="reset"]{
 	background-color:transparent;
 	color:#0e2e40;

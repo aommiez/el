@@ -1,16 +1,4 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Categorties</title>
 
-<link type="text/css" rel="stylesheet" href="<?php echo \Main\Helper\URL::absolute("/public/css/categorties.css")?>">
-<link type="text/css" rel="stylesheet" href="<?php echo \Main\Helper\URL::absolute("/public/css/global.css")?>">
-<link type="text/css" rel="stylesheet" href="<?php echo \Main\Helper\URL::absolute("/public/css/font.css")?>">
-
-</head>
-
-<body>
 
 	<?php $this->import("/layout/header"); ?>
     <!--header-->
@@ -51,6 +39,3 @@
     <?php $this->import("/layout/footer"); ?>
     <!--footer-->
 
-
-</body>
-</html>

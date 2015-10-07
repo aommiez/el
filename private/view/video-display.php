@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <title>Video Display</title>
 
-<link type="text/css" rel="stylesheet" href="css/video-display.css">
-<link type="text/css" rel="stylesheet" href="css/global.css">
-<link type="text/css" rel="stylesheet" href="css/font.css">
+<link type="text/css" rel="stylesheet" href="<?php echo \Main\Helper\URL::absolute("/public/css/video-display.css")?>">
+<link type="text/css" rel="stylesheet" href="<?php echo \Main\Helper\URL::absolute("/public/css/global.css")?>">
+<link type="text/css" rel="stylesheet" href="<?php echo \Main\Helper\URL::absolute("/public/css/font.css")?>">
 
 </head>
 
@@ -26,7 +26,7 @@
             </div><!--tab-name-->
             <div class="video">
         	<!--<video></video>-->
-            <img src="images/videodisplay.jpg" alt="">
+            <img src="<?php echo \Main\Helper\URL::absolute("/public/images/videodisplay.jpg")?>" alt="">
     		</div><!--video-->
         
         	<div class="box-video">
@@ -34,7 +34,7 @@
                     <div class="chat">
                         <div class="box-chat">
                             <div class="invite">
-                                <img src="images/logo-white.png" alt="logo">
+                                <img src="<?php echo \Main\Helper\URL::absolute("/public/images/logo-white.png")?>" alt="logo">
                                 <span>invite<input type="search" name="invite"></span>
                             </div>
                             <div class="box-comment">

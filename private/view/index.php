@@ -1,16 +1,4 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>easy education</title>
 
-<link type="text/css" rel="stylesheet" href="<?php echo \Main\Helper\URL::absolute("/public/css/stylesheet.css")?>">
-<link type="text/css" rel="stylesheet" href="<?php echo \Main\Helper\URL::absolute("/public/css/global.css")?>">
-<link type="text/css" rel="stylesheet" href="<?php echo \Main\Helper\URL::absolute("/public/css/font.css")?>">
-
-</head>
-
-<body>
 	<?php $this->import("/layout/header"); ?>
     <!--header-->
     
@@ -29,7 +17,7 @@
         	<h1>How to work</h1>
         </div><!--container-->
     </div><!--howto-->
-    <div class="video">
+    <div class="video-home">
     	<div class="container">
         	<!--<video></video>-->
             <img src="<?php echo \Main\Helper\URL::absolute("/public/images/video.jpg")?>" alt="">
@@ -91,5 +79,3 @@ you can get help from anyone, anywhere, for anything. ”</h1>
     
     <?php $this->import("/layout/footer"); ?>
     <!--footer-->
-</body>
-</html>

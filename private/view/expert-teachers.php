@@ -1,18 +1,4 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Expert Teachers</title>
 
-<link type="text/css" rel="stylesheet" href="<?php echo \Main\Helper\URL::absolute("/public/css/expert-teachers.css")?>">
-<link type="text/css" rel="stylesheet" href="<?php echo \Main\Helper\URL::absolute("/public/css/global.css")?>">
-<link type="text/css" rel="stylesheet" href="<?php echo \Main\Helper\URL::absolute("/public/css/font.css")?>">
-<link type="text/css" rel="stylesheet" href="<?php echo \Main\Helper\URL::absolute("/public/css/findhelp.css")?>">
-
-
-</head>
-
-<body>
 
 	<?php $this->import("/layout/header"); ?>
     <!--header-->
@@ -38,8 +24,9 @@
            </div><!--sub-menu-->
 		</div><!--page-next-->
 	</div><!--container-->
+    
     <div class="container">
-    	<div class="expert">
+    	<div class="expert-tea">
             <div class="category-expert">
                 <h1>filter by category</h1>
                 <div class="filter">
@@ -55,6 +42,7 @@
                     <div class="sub-number"><a href="">15</a></div>
                 </div><!--filter-->
             </div><!--category-expert-->
+            
             <div class="profile">
                 <div class="box-profile">
                     <img src="<?php echo \Main\Helper\URL::absolute("/public/images/star.png")?>" alt="">
@@ -90,5 +78,3 @@
      <?php $this->import("/layout/footer"); ?>
     <!--footer-->
 
-</body>
-</html>

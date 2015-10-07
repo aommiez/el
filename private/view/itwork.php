@@ -1,18 +1,4 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>It Work</title>
 
-<link type="text/css" rel="stylesheet" href="<?php echo \Main\Helper\URL::absolute("/public/css/itwork.css")?>">
-<link type="text/css" rel="stylesheet" href="<?php echo \Main\Helper\URL::absolute("/public/css/global.css")?>">
-<link type="text/css" rel="stylesheet" href="<?php echo \Main\Helper\URL::absolute("/public/css/font.css")?>">
-<link type="text/css" rel="stylesheet" href="<?php echo \Main\Helper\URL::absolute("/public/css/findhelp.css")?>">
-
-
-</head>
-
-<body>
 
 	<?php $this->import("/layout/header"); ?>
     <!--header-->
@@ -133,6 +119,3 @@ Our experts are here to help you transform your learning experience into real wo
 
     <?php $this->import("/layout/footer"); ?>
     <!--footer-->
-
-</body>
-</html>

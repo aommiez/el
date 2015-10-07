@@ -25,7 +25,7 @@ $this->import('/layout/header');
   </div><!--page-next-->
 </div><!--container-->
   <div class="container">
-    <div class="expert">
+    <div class="expert-tea">
           <div class="category-expert">
               <h1>filter by category</h1>
               <div class="filter">
