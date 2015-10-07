@@ -1,13 +1,26 @@
-<?php
-$this->import('/layout/header');
-?>
-<div class="slide">
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>easy education</title>
+
+<link type="text/css" rel="stylesheet" href="<?php echo \Main\Helper\URL::absolute("/public/css/stylesheet.css")?>">
+<link type="text/css" rel="stylesheet" href="<?php echo \Main\Helper\URL::absolute("/public/css/global.css")?>">
+<link type="text/css" rel="stylesheet" href="<?php echo \Main\Helper\URL::absolute("/public/css/font.css")?>">
+
+</head>
+
+<body>
+	<?php $this->import("/layout/header"); ?>
+    <!--header-->
+    
+    <div class="slide">
     	<div class="container">
             <p class="text-banner01">What do you need help with?</p>
             <p class="text-banner02">Search for online courses on Web development, Yoga, Guitar lessons, or anythinh else.</p>
             <div class="box-subscribe">
                 <input type="text" name="email" placeholder="Enter email address">
-                <button type="submit" id="subscribeBut">subscribe</button>
+                <button type="submit">subscribe</button>
             </div><!--box-subscribe-->
     	</div><!--container-->
     </div><!--banner-->
@@ -21,7 +34,7 @@ $this->import('/layout/header');
         	<!--<video></video>-->
             <img src="<?php echo \Main\Helper\URL::absolute("/public/images/video.jpg")?>" alt="">
         	<div class="box-video">
-            	<a href="itwork.php">view more</a>
+            	<a href="<?php echo \Main\Helper\URL::absolute("/itwork")?>">view more</a>
             </div>
         </div><!--container-->
     </div><!--video-->
@@ -31,7 +44,7 @@ $this->import('/layout/header');
         		<h1>Become a Student</h1>
         	</div>
     	</div><!--student-->
-        <div class="expertHome">
+        <div class="expert">
         	<div class="container">
         		<h1>Become an Expert</h1>
         	</div>
@@ -45,12 +58,12 @@ $this->import('/layout/header');
             </div>
             <div class="our-service">
             	<div class="expert-teachers">
-                	<a href=""><img class="service-img" src="<?php echo \Main\Helper\URL::absolute("/public/images/ourservice1.png")?>" alt="expert-teachers"></a>
+                	<a href="<?php echo \Main\Helper\URL::absolute("expert-teachers")?>"><img class="service-img" src="<?php echo \Main\Helper\URL::absolute("/public/images/ourservice1.png")?>" alt="expert-teachers"></a>
                     <a class="link-service" href="">expert teachers</a>
                     <div class="line"></div>
                     <p class="service-detail">Work with someone instantly or schedule
 					a lesson with your preferred expert
-					at a convenient time.</p>
+					at a convenient time.</p>   
                 </div><!--expert-teachers-->
                 <div class="certificate">
                 	<a href=""><img class="service-img" src="<?php echo \Main\Helper\URL::absolute("/public/images/ourservice2.png")?>" alt="TRUSTED CERTIFICATIONS"></a>
@@ -75,6 +88,8 @@ $this->import('/layout/header');
 you can get help from anyone, anywhere, for anything. ”</h1>
         </div><!--container-->
     </div><!--book-->
-<?php
-$this->import('/layout/footer');
-?>
+    
+    <?php $this->import("/layout/footer"); ?>
+    <!--footer-->
+</body>
+</html>
