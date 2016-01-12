@@ -2,51 +2,42 @@
 <footer>
     	<div class="container">
         	<div class="box-footer">
-                <div class="member">
-                	<div class="joined">
-                    	<p class="text-member">Joined members</p>
-                        <p class="number">2723</p>
-                    </div>
-                    <div class="online">
-                    	<p class="text-member">Online members</p>
-                        <p class="number">3000</p>
-                    </div>
-                </div><!--member-->
-                <div class="link-facebook">
-                	<h1>Likes on Facebook</h1>
-                    <div class="likes-facebook">
-                    	<a href="#"><img src="<?php echo \Main\Helper\URL::absolute("/public/images/facebook.jpg")?>" alt="facebook"></a>
-                        <a href="#"><img src="<?php echo \Main\Helper\URL::absolute("/public/images/logo-white.png")?>" alt=""></a>
-                    </div>
-                    <img src="<?php echo \Main\Helper\URL::absolute("/public/images/link-facebook.png")?>" alt="">
+                <div class="col-md-12">
+                	<div class="easy-logo text-center"><h1>Easy Education</h1></div>
                 </div>
-                <div class="latest">
-                	<h1>Latest News</h1>
-                	<div class="box-news">
-                    	<div class="img-news">
-                        </div>
-                        <div class="detail">
-                        	<p>Access your past lessons at any time</p>
-                            <a href="#">read more <img src="<?php echo \Main\Helper\URL::absolute("/public/images/readmore.png")?>" alt="readmore"></a>
-                        </div>
-                    </div><!--box-news-->
-                    <div class="box-news">
-                    	<div class="img-news">
-                        </div>
-                        <div class="detail">
-                        	<p>Five ways to score cheap textbooks</p>
-                            <a href="#">read more <img src="<?php echo \Main\Helper\URL::absolute("/public/images/readmore.png")?>" alt="readmore"></a>
-                        </div>
-                    </div><!--box-news-->
-                    <div class="box-news">
-                    	<div class="img-news">
-                        </div>
-                        <div class="detail">
-                        	<p>Online geometry tutoring</p>
-                            <a href="#">read more <img src="<?php echo \Main\Helper\URL::absolute("/public/images/readmore.png")?>" alt="readmore"></a>
-                        </div>
-                    </div><!--box-news-->
-                </div><!--lates-->
+                <div class="contact-address">
+                    <div class="col-md-6 text-right">
+                    	<p>1991/192 Onnut Road.<br>
+						Suan Luang. Bangkok 10250</p>
+                    </div>
+                    <div class="col-md-6 text-left">
+                    	<p>Phone : (66)-2101-8972</p>
+                    </div>
+                </div>
+                <div class="col-md-12 text-center">
+                	<div class="social-icon">
+                    	<div class="socials-item">
+							<a href="#" target="_blank" class="social-facebook">
+								<span class="socials-hover social-facebook"></span>
+							</a>
+						</div>
+                        <div class="socials-item">
+							<a href="#" target="_blank" class="social-pinterest">
+								<span class="socials-hover social-pinterest"></span>
+							</a>
+						</div>
+                        <div class="socials-item">
+							<a href="#" target="_blank" class="social-twitter">
+								<span class="socials-hover social-twitter"></span>
+							</a>
+						</div>
+                        <div class="socials-item">
+							<a href="#" target="_blank" class="social-gplus">
+								<span class="socials-hover social-gplus"></span>
+							</a>
+						</div>
+                    </div>
+                </div>
              </div><!--box-footer-->
          </div><!--container-->
             <div class="copyright">
