@@ -29,9 +29,78 @@ use Main\Helper;
     <script src="<?php echo \Main\Helper\URL::absolute("/public/js/bootstrap.min.js")?>"></script>
 </head>
 <body>
+	
 
   	<header>
       	<div class="header">
+        	<div class="top-menu">
+        	<div class="container">
+    		<div class="row">
+        		<div class="col-md-6">
+            	</div>
+            	<div class="col-md-6 text-right">
+                <div class="top-right">
+                	<ul>
+                    	<li><a class="top-login" href="#" data-toggle="modal" data-target=".bs-example-modal-lg"><span class="glyphicon glyphicon-user"></span>Login</a></li> |
+                        <li><a class="top-register" href="<?php echo \Main\Helper\URL::absolute("/register")?>">Register</a></li> |
+                        <li><a class="top-en"><img class="img-responsive" src="<?php echo \Main\Helper\URL::absolute("/public/images/en.gif")?>" alt="en">EN</a></li> |
+                        <li><a class="top-th"><img class="img-responsive" src="<?php echo \Main\Helper\URL::absolute("/public/images/th.gif")?>" alt="th">TH</a></li> |
+                    </ul>
+                    <div class="modal fade bs-example-modal-lg text-left" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  						<div class="modal-dialog modal-lg">
+    						<div class="modal-content box-login">
+                            	<div class="col-md-12 text-center">
+                                	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                	<h1>Sign in</h1>
+									<p>with your social network</p>
+                                	<div class="login-sns">
+                                    	<div class="col-sm-4">
+                                        	<button type="button" class="btn btn-default btn-fb"><span class="icon icon-facebook text-left"></span>facebook</button>
+                                        </div>
+                                        <div class="col-sm-4">
+                                        	<button type="button" class="btn btn-default btn-gg"><span class="icon icon-google-plus"></span>google</button>
+                                        </div>
+                                        <div class="col-sm-4">
+                                        	<button type="button" class="btn btn-default btn-tt"><span class="icon icon-twitter"></span>twitter</button>
+                                        </div>
+                                    </div>
+                              	</div>
+                                <div class="col-md-12 text-center">
+                                    <div class="or"><span>or</span></div>
+                                </div>
+                                <div class="col-md-12">
+                                	<form autocomplete="off">
+                                    	<span class="input-group to_be_hidden btn-box-login">
+											<input type="text" name="username" id="gr_login_username" tabindex="1" autocomplete="off" autofocus autocapitalize="off" autocorrect="off" placeholder="Username or email">
+                                        	<label for="gr_login_username">Username or email</label>
+                                   		</span>
+                                        <span class="input-group to_be_hidden btn-box-login">
+											<input type="password" name="password" id="gr_login_password" tabindex="1" autocomplete="off" autofocus autocapitalize="off" autocorrect="off" placeholder="Password">
+                                        	<label for="gr_login_username">Password</label>
+                                   		</span>
+                                        <span class="checkbox-group text-right to_be_hidden">
+                                            <label for="gr_login_rememberme" class="text">Keep me signed in</label>
+                                            <input type="checkbox" name="remember" id="gr_login_rememberme" value="">
+                                            <label for="gr_login_rememberme" class="fake-checkbox"></label>
+                                        </span>
+                                        <span class="btn-signin">
+                                        	<button type="button" class="btn btn-primary">sign in</button>
+										</span>
+                                        <div class="bottom-links">
+											<a href="register.php" class="href-sign-up text-left">Not a member? Sign up</a>
+											<a href="" class="href-lost-password to_be_hidden pull-right text-right">Forgot your password?</a>
+											<div><a href="" class="pull-right problems_signing text-right">Problems signing in?</a></div>
+										</div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+					</div>
+            	</div>	
+            </div>
+        </div>
+    </div>
+    </div>
               <div class="container">
                   <a name="top"></a>
                   <div class="logo">
@@ -50,3 +119,5 @@ use Main\Helper;
               </div><!--container-->
   	</div>
   </header><!--header-->
+  
+

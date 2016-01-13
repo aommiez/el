@@ -219,16 +219,21 @@ ul.menu{
 	float:left;
 	margin-top: 10px;
 	padding-left:50px;
+	width:90%;
+	text-align: right;
 }
 ul.menu li{
 	display:inline;
+	padding: 0 25px;
 }
 ul.menu li a{
 	font-family: 'inseebold';
 	color:#000;
 	text-decoration:none;
 	font-size:31px;
-	padding: 0 25px;
+}
+ul.menu li:last-child{
+	padding-right:0;
 }
 ul.menu li a.active,
 ul.menu li a:hover{
@@ -1934,3 +1939,225 @@ footer {
 .icon-libery:hover{
 	background:url(../images/library.gif) no-repeat;
 }
+
+/*top menu*/
+
+.top-right{
+	padding: 15px 0 0 0;
+	font-family: 'MyriadPro-Bold';
+}
+
+.top-right ul{
+	list-style:none;
+	display:inline-block;
+    display: -webkit-inline-box;
+}
+
+.top-right li{
+	padding: 0px 10px;
+	cursor: pointer;
+}
+
+.top-right li a img{
+	display:inline-block;
+    display: -webkit-inline-box;
+	vertical-align: top;
+    margin-right: 5px;
+}
+
+.top-right li a{
+	color:#000;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+
+.top-login span{
+	margin-right:5px;
+}
+
+.top-right li a img:hover{
+	opacity:0.7;
+}
+
+.top-right li a:hover{
+    color: #218e8b;
+}
+
+.box-login{
+	padding:25px 20px;
+	float: left;
+    width: 100%;
+}
+
+.or{
+	position: relative;
+    margin: 1em 0;
+    color: #b3b3b3;
+	font-family: 'SemiLight';
+}
+
+.or span {
+    background-color: #fff;
+    padding: 0 1em;
+    position: relative;
+    z-index: 1;
+	font-size:20px;
+}
+
+.or:after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #e6e6e6;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+span.input-group {
+    position: relative;
+    display: block;
+    clear: both;
+}
+
+.btn-box-login input[type="text"],
+.btn-box-login input[type="password"]{
+	-webkit-transition: border-color;
+    -moz-transition: border-color;
+    transition: border-color;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 3px;
+    border: 1px solid #DDD;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.06);
+    font-family: "Open Sans","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+    font-size: 1em;
+    margin-bottom: 1em;
+    padding: 1em;
+    width: 100%;
+}
+
+span.input-group label {
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    position: absolute;
+    top: 45%;
+    left: 1em;
+    background-color: #fff;
+    color: #b3b3b3;
+    font-weight: normal;
+    cursor: text;
+    pointer-events: none;
+	display:none;
+}
+
+::-webkit-input-placeholder {
+	color: #b3b3b3;
+}
+
+::-webkit-input-placeholder:focus, 
+::-webkit-input-placeholder:active{
+	color:#fff;
+}
+
+.btn-box-login input[type="text"]:focus{
+	border-color: #286ebb;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.06),0 0 5px rgba(40,110,187,0.7);
+	outline: none;
+}
+
+span.input-group input:focus ~ label, span.input-group input.hascontent~label{
+    top: 0;
+    font-size: .8em;
+    padding: 0 .3em;
+    color: #286ebb;
+	display:inline;
+}
+
+.top-right .modal-lg{
+	width:600px;
+}
+
+.to_be_hidden input[type=checkbox] {
+    margin-left:4px;
+}
+
+.btn-signin button{
+	width:100%;
+	text-transform:uppercase;
+	padding: 10px 0;
+    margin: 10px 0 0 0;
+}
+
+.problems_signing{
+    color: #AAA;
+    font-size: 12px;
+}
+
+.bottom-links{
+	margin:10px 0;
+}
+
+.bottom-links a{
+	font-family: 'SemiLight';
+	font-size:18px;
+	line-height: 20px;
+}
+
+.login-sns button{
+	width:100%;
+	text-transform:uppercase;
+	color:#fff;
+	padding:10px 0;
+}
+
+.icon:before {
+    vertical-align: middle;
+	font-size: 25px;
+	margin-right:15px;
+}
+
+.login-sns .btn-fb{
+	background-color: #3b5998;
+}
+
+.login-sns .btn-gg{
+	background-color: #db402c;
+}
+
+.login-sns .btn-tt{
+	background-color: #55acee;
+}
+
+.login-sns button:hover{
+	color:#fff;
+}
+
+.login-sns .btn-fb:hover{
+	background-color: #2d4373;
+}
+
+.login-sns .btn-gg:hover{
+	background-color: #b5301f;
+}
+
+.login-sns .btn-tt:hover{
+	background-color: #2795e9;
+}
+
+.top-menu{
+	border-bottom:1px solid #e7e7e7;
+}
+
+.btn-box-login input:-webkit-autofill {
+    background-color: #fff !important;
+	color: #b3b3b3 !important;
+}
+
+
