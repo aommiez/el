@@ -16,6 +16,7 @@ use Main\Helper;
     <link href="<?php echo Helper\URL::absolute("/public/css/core.css")?>" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="<?php echo Helper\URL::absolute("/public/css/bootstrap.min.css")?>" rel="stylesheet">
+    <link href="<?php echo \Main\Helper\URL::absolute("/")?>public/css/iconmoon.css" rel="stylesheet" media="screen">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -27,6 +28,7 @@ use Main\Helper;
     <script src="<?php echo \Main\Helper\URL::absolute("/public/js/jquery.min.js")?>"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="<?php echo \Main\Helper\URL::absolute("/public/js/bootstrap.min.js")?>"></script>
+
 </head>
 <body>
 	
@@ -39,14 +41,40 @@ use Main\Helper;
         		<div class="col-md-6">
             	</div>
             	<div class="col-md-6 text-right">
-                <div class="top-right">
+                <div class="top-right login-sns">
                 	<ul>
-                    	<li><a class="top-login" href="#" data-toggle="modal" data-target=".bs-example-modal-lg"><span class="glyphicon glyphicon-user"></span>Login</a></li> |
-                        <li><a class="top-register" href="<?php echo \Main\Helper\URL::absolute("/register")?>">Register</a></li> |
+                    	<li><button type="button" class="btn btn-default btn-fb" data-toggle="tooltip" data-placement="bottom" 
+                        title="เราใช้การล็อกอินผ่าน Facebook โดยขอชื่อและอีเมล์เท่านั้น ท่านสามารถเปลี่ยนแปลงข้อมูลของท่านได้ใน &#8221;แก้ไขโปรไฟล์&#8221; ได้ตลอดเวลา"><span class="icon icon-facebook text-left"></span>LOGIN</button></li>
+                        <li><button type="button" class="btn btn-default btn-gg" data-toggle="tooltip" data-placement="bottom" 
+                        title="เราใช้การล็อกอินผ่าน google โดยขอชื่อและอีเมล์เท่านั้น ท่านสามารถเปลี่ยนแปลงข้อมูลของท่านได้ใน &#8221;แก้ไขโปรไฟล์&#8221; ได้ตลอดเวลา"><span class="icon icon-google-plus"></span>LOGIN</button></li> 
+                        <li><button type="button" class="btn btn-default btn-tt" data-toggle="tooltip" data-placement="bottom" 
+                        title="เราใช้การล็อกอินผ่าน twitter โดยขอชื่อและอีเมล์เท่านั้น ท่านสามารถเปลี่ยนแปลงข้อมูลของท่านได้ใน &#8221;แก้ไขโปรไฟล์&#8221; ได้ตลอดเวลา"><span class="icon icon-twitter"></span>LOGIN</button></li>
                         <li><a class="top-en"><img class="img-responsive" src="<?php echo \Main\Helper\URL::absolute("/public/images/en.gif")?>" alt="en">EN</a></li> |
-                        <li><a class="top-th"><img class="img-responsive" src="<?php echo \Main\Helper\URL::absolute("/public/images/th.gif")?>" alt="th">TH</a></li> |
+                        <li><a class="top-th"><img class="img-responsive" src="<?php echo \Main\Helper\URL::absolute("/public/images/th.gif")?>" alt="th">TH</a></li> 
                     </ul>
-                    <div class="modal fade bs-example-modal-lg text-left" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    
+                    <div class="login-finish dropdown">
+                    	<ul>
+                        	<li role="presentation" class="avatar dropdown"><a href="#" id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="img-circle" src="<?php echo \Main\Helper\URL::absolute("/public/images/avatar.gif")?>" alt="avatar">
+                            <span class="name">Alice</span></a>
+                            	<ul class="dropdown-menu submenu text-left" aria-labelledby="dLabel">
+                                	<li><a href=""><span class="icon icon-equalizer"></span>DASHBOARD</a></li>
+                                    <li><a href=""><span class="icon icon-user"></span>edit profile</a></li>
+                                    <li><a href=""><span class="icon icon-star-full"></span>my course</a></li>
+                                    <li><a href=""><span class="icon icon-credit-card"></span>credit</a></li>
+                                    <li class="hr"></li>
+                                    <li><a href=""><span class="icon icon-exit"></span>logout</a></li>
+                                </ul>
+                            
+                            </li> 
+                        	<li class="bell"><a href="" class="icon icon-bell"></a></li> |
+                            <li><a class="top-en"><img class="img-responsive" src="<?php echo \Main\Helper\URL::absolute("/public/images/en.gif")?>" alt="en">EN</a></li> |
+                        <li><a class="top-th"><img class="img-responsive" src="<?php echo \Main\Helper\URL::absolute("/public/images/th.gif")?>" alt="th">TH</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!--<div class="modal fade bs-example-modal-lg text-left" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
   						<div class="modal-dialog modal-lg">
     						<div class="modal-content box-login">
                             	<div class="col-md-12 text-center">
@@ -95,7 +123,7 @@ use Main\Helper;
                                 </div>
                             </div>
                         </div>
-					</div>
+					</div>-->
             	</div>	
             </div>
         </div>
@@ -109,15 +137,24 @@ use Main\Helper;
                   <menu>
                       <ul class="menu">
                           <li><a class="active" href="<?php echo \Main\Helper\URL::absolute("/")?>">Home</a></li>
-                          <li><a href="<?php echo \Main\Helper\URL::absolute("/itwork")?>">How it Works</a></li>
-                          <li><a href="<?php echo \Main\Helper\URL::absolute("/services")?>">Services</a></li>
-                          <li><a href="<?php echo \Main\Helper\URL::absolute("/categorties")?>">Categorty</a></li>
                           <li><a href="<?php echo \Main\Helper\URL::absolute("/aboutus?pages=aboutus")?>">About Us</a></li>
-                          <li><a href="<?php echo \Main\Helper\URL::absolute("/signin")?>">Sign in</a></li>
+                          <li><a href="<?php echo \Main\Helper\URL::absolute("/course")?>">Courses</a></li>
+                          <li><a href="<?php echo \Main\Helper\URL::absolute("/teacher")?>">Teachers</a></li>
+                          <li><a href="<?php echo \Main\Helper\URL::absolute("/blogs")?>">Blogs</a></li>
+                          <li><a href="<?php echo \Main\Helper\URL::absolute("/webboard")?>">Webboard</a></li>
                       </ul>
                   </menu><!--menu-->
               </div><!--container-->
   	</div>
   </header><!--header-->
   
+<script>
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+
+<script>
+$('.dropdown-toggle').dropdown()
+</script>
 

@@ -40,8 +40,5 @@
         </div><!--contact-->
     </div><!--container-->
 
-	<?php $this->import("/layout/social"); ?>
-   	<!--social-->
-        
      <?php $this->import("/layout/footer"); ?>
     <!--footer-->

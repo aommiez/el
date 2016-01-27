@@ -26,7 +26,7 @@
                             </div>				  
                             <!-- /.header button -->
                             <div class="form-group last">
-                            	<input type="submit" class="btn btn-warning btn-block btn-lg" value="APPLE NOW">
+                            	<input type="submit" class="btn btn-warning btn-block btn-lg" value="APPLY NOW">
                             </div>
                           	</div>
                         </div>
@@ -103,7 +103,7 @@
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-6 text-center">
                         <div class="icon-flat">
-                            <a href="#" class="icon-inner icon-teacher"></a>
+                            <a href="#" class="icon-inner icon-teacher-index"></a>
                         </div>
                         <div class="icon-text">
                             <h3>Teachers Team</h3>
